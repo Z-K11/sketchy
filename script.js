@@ -17,12 +17,12 @@ function initialize()
     const gridSize =size*size;
     if (size>=0 && size<=100)
     {
-        creatGrid(gridSize,divArray);
+        creatGrid(gridSize,divArray,size);
     }
     });
     
 }
-function creatGrid(gridSize,divArray)
+function creatGrid(gridSize,divArray,size)
 {
     for (let i=0;i<gridSize;i++)
         {
@@ -44,4 +44,5 @@ mainWindow.addEventListener('mouseover',e =>
     if (!e.target.classList.contains('gridBox'))
         return;
     e.target.style.backgroundColor='aqua';
+    console.log(e.target.id);
 });
