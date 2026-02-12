@@ -16,14 +16,12 @@ body
 {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
-    gap: 5px;
+    width: 800px;
 }
 .gridBox
 {
-    width: 100px;
-    height: 100px;
     box-sizing: border-box;
+    background-color: red;
     
 }
 .gridBox :hover
