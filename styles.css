@@ -23,5 +23,10 @@ body
 {
     width: 100px;
     height: 100px;
-    background-color: rgb(231, 161, 68);
+    box-sizing: border-box;
+    
+}
+.gridBox :hover
+{
+    background-color: aqua;
 }

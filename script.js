@@ -9,7 +9,14 @@ for (let i=0;i<gridSize;i++)
     {
         divArray.push(document.createElement("div"));
         divArray[i].classList.add('gridBox');
+        divArray[i].setAttribute("id",`box_${i}`);
         //divArray[i].textContent="how are you";
         mainWindow.appendChild(divArray[i]);
         console.log(divArray[i]);
     }
+mainWindow.addEventListener('mouseover',e =>
+{
+    if (!e.target.classList.contains('gridBox'))
+        return;
+    e.target.style.backgroundColor='aqua';
+})
