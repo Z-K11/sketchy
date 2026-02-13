@@ -24,11 +24,5 @@ body
 }
 .gridBox
 {
-    box-sizing: border-box;
-    background-color: red;
-    
-}
-.gridBox :hover
-{
-    background-color: aqua;
+    box-sizing: border-box;    
 }

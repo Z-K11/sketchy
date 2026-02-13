@@ -27,6 +27,7 @@ function destroyGrid(divArray)
     }
     divArray.length=0;
 }
+let opacity =0;
 const sizeButton=document.querySelector("#sizeSubmit");
 let size = 0;
 let divArray = [];
@@ -48,6 +49,7 @@ sizeButton.addEventListener("click",e=>
                 break;
             case true:
                 destroyGrid(divArray);
+                opacity=0;
                 if(size>=0 && size<=100)
                     creatGrid(gridSize,divArray,size);
                 break;
@@ -61,5 +63,6 @@ mainWindow.addEventListener('mouseover',e =>
 {
     if (!e.target.classList.contains('gridBox'))
         return;
-    e.target.style.backgroundColor='aqua';
+    
+    e.target.style.backgroundColor=`rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${opacity+=10}%)`;
 });
