@@ -19,6 +19,8 @@ body
     flex-wrap: wrap;
     width: 800px;
     height: 800px;
+    border: 4px double black;
+    border-radius: 10px;
 }
 .gridBox
 {
